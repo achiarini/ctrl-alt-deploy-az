@@ -23,6 +23,8 @@ Procedure:
 1. Configurazione Iniziale: Configurare il set di VM, l'applicazione web, il bilanciatore di carico e il scale set in Azure.
 2. Avvio del Test di Carico: Iniziare il test con un carico basso e monitorare le prestazioni.
 3. Incremento del Carico: Aumentare gradualmente il carico e osservare come il sistema reagisce.
+
+
 **Valutazione dei Risultati**:
 **Prestazioni**: Analizzare le prestazioni dell'applicazione in termini di tempi di risposta e affidabilità durante diverse fasi del carico.
 Questo esperimento dimostrerà l'efficacia della scalabilità automatica in Azure e la capacità del sistema di gestire variazioni di carico mantenendo prestazioni stabili.
