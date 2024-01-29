@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - hello-world-flask
+    networks:
+      - webnet
+
+  hello-world-flask:
+    image: cad-ubu-flask-01
+    deploy:
+      resources:
+        limits:
+            cpus: '0.33'
+      replicas: 3
+    expose:
+      - "5000"
+    networks:
+      - webnet
+
+networks:
+  webnet:
