@@ -8,3 +8,6 @@ docker ps
 #testiamo la risposta
 echo "testiamo la risposta del container"
 curl localhost:1234
+
+echo "Rimozione del container"
+docker kill $(docker ps -q)

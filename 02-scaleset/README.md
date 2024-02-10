@@ -1,4 +1,4 @@
-Descrizione dell'Esperimento
+***Descrizione dell'Esercitazione***
 
 **Obiettivo**:
 Dimostrare la scalabilità automatica di un gruppo di VM in Azure in risposta a variazioni di carico.

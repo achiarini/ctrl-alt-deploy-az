@@ -17,8 +17,8 @@ services:
     deploy:
       resources:
         limits:
-            cpus: '0.33'
-      replicas: 3
+            cpus: '0.3'
+      replicas: 2
     expose:
       - "5000"
     networks:
