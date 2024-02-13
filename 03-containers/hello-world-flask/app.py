@@ -7,6 +7,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return '''Hello (Azure) World.
+    return F'''Hello (Azure) World.
              \n It's {hostname} replying
              \n version:2.0'''
