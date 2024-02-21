@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ctrl-alt-deploy-deployment
+  labels:
+    app: ctrl-alt-deploy
+spec:
+  replicas: 2 # Specifies the number of pods to run
+  selector:
+    matchLabels:
+      app: ctrl-alt-deploy
+  template:
+    metadata:
+      labels:
+        app: ctrl-alt-deploy
+    spec:
+      containers:
+      - name: hello-world
+        image: ctrlaltdeploy.azurecr.io/ash/hello-world # Replace with your actual image
+        ports:
+        - containerPort: 5000
